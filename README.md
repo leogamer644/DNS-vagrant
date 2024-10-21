@@ -19,6 +19,8 @@ Ensure that you have the following software installed:
 
 - [Vagrant](https://www.vagrantup.com/) (>= 2.0.0)
 - [VirtualBox](https://www.virtualbox.org/) or another Vagrant provider
+**If you want support**
+- [Linux] (any distro really) I dont provide support for windows
 
 ### Clone the Repository
 ```bash
