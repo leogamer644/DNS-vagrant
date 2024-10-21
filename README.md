@@ -4,12 +4,12 @@ This repository contains a Vagrant configuration file that sets up two virtual m
 
 ## Overview of "machines" in network
 
-- **Mercurio**: IP: `192.168.57.101`
+- **Mercurio**: Imaginary linux client IP: `192.168.57.101`
 - **Venus**: Slave DNS server (IP: `192.168.57.102`)
 - **Tierra**: Master DNS server (IP: `192.168.57.103`)
-- **Marte**: IP: `192.168.57.104`
+- **Marte**: Mail server IP: `192.168.57.104`
 
-This setup uses BIND9 for DNS services, where the master server hosts the DNS zones and the slave server synchronizes zone data from the master.
+This setup uses BIND9 for DNS services, where the master server hosts the DNS zones and the slave server synchronizes zone data from the master. Mail server and the extra machine (mercurio) arent created but they are taken into account in this exercise
 
 ## Getting Started
 
