@@ -1,0 +1,11 @@
+zone "sistema.test" {
+    type master;
+    file "/var/lib/bind/direct.zone";
+    allow-transfer { 192.168.57.102; };
+};
+
+zone "57.168.192.in-addr.arpa" {
+    type master;
+    file "/var/lib/bind/reverse.zone"; 
+    allow-transfer { 192.168.57.102; };
+};

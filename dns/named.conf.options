@@ -1,0 +1,27 @@
+acl "localnet" {
+    192.168.57.0/24;
+};
+
+acl "trusted" {
+    127.0.0.0/8;
+    localnet;
+};
+
+options {
+        directory "/var/cache/bind";
+
+        recursion yes;
+        allow-recursion {
+                trusted;
+        };
+        forwarders {
+                208.67.222.222;
+         };
+
+        listen-on port 53 {
+            192.168.57.103;
+            192.168.57.102;
+        };
+
+        dnssec-validation yes;
+};

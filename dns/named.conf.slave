@@ -1,0 +1,11 @@
+zone "sistema.test" {
+    type slave;
+    file "/var/lib/bind/direct.zone";
+    masters { 192.168.57.103; };
+};
+
+zone "57.168.192.in-addr.arpa" {
+    type slave;
+    file "/var/lib/bind/reverse.zone";
+    masters { 192.168.57.103; };
+};
