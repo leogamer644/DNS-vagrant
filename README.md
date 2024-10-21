@@ -2,7 +2,7 @@
 
 This repository contains a Vagrant configuration file that sets up two virtual machines, one configured as a master DNS server and the other as a slave DNS server, running bind9.
 
-## Overview
+## Overview of "machines" in network
 
 - **Mercurio**: IP: `192.168.57.101`
 - **Venus**: Slave DNS server (IP: `192.168.57.102`)
