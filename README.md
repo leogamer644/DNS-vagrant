@@ -1,5 +1,4 @@
 # DNS-vagrant
-# DNS Vagrant
 
 This repository contains a Vagrant configuration file that sets up two virtual machines, one configured as a master DNS server and the other as a slave DNS server, running bind9.
 
@@ -33,8 +32,7 @@ vagrant up
 ### Access the VMs
 Access one of the VMs through your preferred method, in my case I use 
 ```bash
-vagrant ssh tierra // or
-vagrant ssh venus
+vagrant ssh tierra // or vagrant ssh venus
 ```
 ### Test the dns
 As the solution should be done already you can test it by using the command **dig**
@@ -42,5 +40,6 @@ or by using the script provided. you can copy it to the machine by typing the ne
 ```bash
 cp /vagrant/script/test.sh test.sh
 chmod 777 test.sh
-./test.sh
+./test.sh 192.168.57.103 // for the master machine
+./test.sh 192.168.57.102 // for the slave machine
 ```
