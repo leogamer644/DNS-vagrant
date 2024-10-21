@@ -21,7 +21,7 @@ Ensure that you have the following software installed:
 - [VirtualBox](https://www.virtualbox.org/) or another Vagrant provider
 
 **If you want support**
-- [Linux] (any distro really) I dont provide support for windows
+- [Linux](https://distrowatch.com/) (any distro really) I dont provide support for windows
 
 ### Clone the Repository
 ```bash
